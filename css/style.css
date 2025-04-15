@@ -1,0 +1,147 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background-color: #444;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 20px;
+    background: white;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    background: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background: #666;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 15px;
+    background: #444;
+    color: white;
+    margin-top: 20px;
+  }
+  
+/* Galerie foto */
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  .galerie img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+
+
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    table, th, td {
+      font-size: 14px;
+    }
+  }
+
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Conținutul principal să ocupe tot spațiul rămas */
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Galerie foto */
+  .galerie {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Imagini în galerie */
+  .galerie img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  /* Footer fix jos */
+  footer {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
